@@ -1,0 +1,15 @@
+h1 {
+    text-align: center;
+    text-decoration-color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 90px;
+    background-image: url(../../Pinterest/mount-fuji-2305606.jpg);
+    background-size:cover
+}
+
+
+
+body {
+    background:rgb(160, 155, 155) url(../Bg/redox_01/redox_01.png);
+    background-position: inherit;
+}

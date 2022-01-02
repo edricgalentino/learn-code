@@ -1,0 +1,149 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #eee;
+  line-height: 1.65;
+}
+/* latihan 1- Kolom*/
+.container-satu {
+  width: 90%;
+  margin: 50px auto;
+  background-color: white;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.container-satu .kolom-utama {
+  flex: 3;
+  order: 1;
+}
+.container-satu .sidebar-satu {
+  flex: 1;
+  order: 2;
+}
+.container-satu .sidebar-dua {
+  flex: 1;
+  order: 3;
+}
+@media (min-width: 600px) {
+  .container-satu {
+    width: 800px;
+    display: flex;
+  }
+  .container-satu .kolom-utama {
+    flex: content;
+    order: 2;
+  }
+  .container-satu .sidebar-satu {
+    flex: content;
+    order: 1;
+  }
+  .container-satu .sidebar-dua {
+    flex: content;
+    order: 3;
+  }
+}
+/* latihan 2 - Service / Features*/
+.container-dua {
+  max-width: 800px;
+  margin: 50px auto;
+}
+.layanan {
+  padding: 10px;
+  box-sizing: border-box;
+  margin: 0 20px 20px 20px;
+}
+.layanan h3 {
+  text-align: center;
+}
+.layanan p {
+  text-align: center;
+}
+.layanan.satu {
+  background-color: violet;
+}
+.layanan.dua {
+  background-color: aquamarine;
+}
+.layanan.tiga {
+  background-color: crimson;
+}
+/* responsive */
+@media (min-width: 600px) {
+  .container-dua {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .layanan {
+    width: 30%;
+  }
+  .container-tiga .thumbnail {
+    width: 23%;
+  }
+}
+
+/* latihan 3 */
+.container-tiga {
+  max-width: 800px;
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.thumbnail {
+  width: 47%;
+  margin: 5px;
+}
+.thumbnail img {
+  width: 100%;
+  border: 3px solid white;
+}
+
+/* latihan 4 */
+.container-empat {
+  width: 800px;
+  margin: 50px auto;
+  display: flex;
+}
+.card {
+  border: 1px solid rgb(112, 112, 112);
+  border-radius: 10px;
+  background-color: white;
+  text-align: center;
+  padding: 10px;
+  margin: 5px;
+  flex-grow: 1;
+}
+.card .headers {
+  height: 150px;
+  background-image: url(../Bg/Portfolio/nordwood-themes-Cli7eZZzfyM-unsplash.jpg);
+  background-size: cover;
+  line-height: 150px;
+  font-weight: bold;
+  font-size: 20px;
+}
+.card .headerd {
+  height: 150px;
+  background-image: url(../Bg/Portfolio/nubelson-fernandes-XlAWlxKIXhA-unsplash.jpg);
+  background-size: cover;
+  line-height: 150px;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+}
+.card .headert {
+  height: 150px;
+  background-image: url(../Bg/Portfolio/nubelson-fernandes-ykyZH-JFQ2w-unsplash.jpg);
+  background-size: cover;
+  line-height: 150px;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+}
+.card:hover {
+  transform: scale(1.12);
+  transition: 0.4s;
+}

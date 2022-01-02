@@ -1,0 +1,197 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body{
+    background-image: url(../Bg/redox_01/redox_01.png);
+}
+.container{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    width: 1000px;
+    margin: 45px auto 0px;
+    padding-top: 20px;
+    font-size: 16px/28px;
+    position: relative;
+}
+.topbar{
+    height: 45px;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    background-color: rgb(241, 241, 241);
+    border-bottom: black;
+}
+.ig{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 20px;
+    top: 40px;
+}
+.twt{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 60px;
+    top: 40px;
+}
+.header h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+.header ul li{
+    display: inline-block;
+    margin: 10px;
+    margin-left: 20px;
+}
+.header a{
+    text-decoration: none;
+    margin: 5px;
+    color: maroon;
+}
+.header a:hover{
+    font-style: italic;
+    background-color: wheat;
+}
+.heroimg{
+    border-top: 5px solid wheat;
+    border-bottom: 5px solid wheat;
+    margin-top: 10px;
+    height: 450px;
+    background-image: url(../../Pinterest/flamingo-5527232.jpg);
+    background-size: cover;
+    background-position: 0,-80px;
+}
+.hdua{
+    width: 700px;
+    float: left;
+}
+.heroimg h2{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align:center;
+    line-height: 450px;
+    display: none;
+}
+.inti h2{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 20px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.inti p{
+    font-size: 15px;
+    margin-left: 20px;
+    margin-top: -10px;
+}
+.inti a{
+    color: #252424;
+    text-decoration: none;
+    color: maroon;
+}
+.hdua a:hover{
+    font-style: italic;  
+    background-color: wheat; 
+}
+.main{
+    margin: 20px;
+    text-align: justify;
+}
+.main p{
+    text-indent: 20px;
+    margin: 20px 0px 20px;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+.sidebar{
+    width: 280px;
+    float: right;
+}
+.sidebar img{
+    margin-left: 10px;
+}
+.sidebar h3{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 10px 20px;
+}
+.sidebar p{
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin: 10px;
+    
+}
+
+
+
+
+
+
+
+
+
+/* clear float */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+.cf {
+    *zoom: 1;
+}
+.footer{
+    background-color: #252424;
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    color: white;
+    padding: 20px;
+}

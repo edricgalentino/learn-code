@@ -1,0 +1,26 @@
+.perc li a{
+    color: lightcoral;
+    background-color: lightcyan;   
+}
+.perc li{
+    display: inline;
+}
+.perc h1{
+    background-image: url(../Bg/blank\ white.jfif);
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.percs img{
+    width: 200px;
+    height: 200px;
+    display: block;
+}
+.hajj {
+    border : rgb(95, 255, 130);
+}
+.percs p span{
+    color: hotpink;
+    background-color: lavender;
+    font-style: italic;
+}
+

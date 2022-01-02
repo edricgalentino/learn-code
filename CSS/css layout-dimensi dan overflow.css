@@ -1,0 +1,22 @@
+.lalak{
+    width: 3in;
+    height: 30pc;
+    background-color:pink;
+    overflow: auto;
+}
+img{
+    width: 200px;
+    height: 200px;
+}
+.percs{
+    width: 400px;
+    height: 400px;
+    overflow: auto;
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+}
+body{
+    font-size:larger;
+    font-family:Arial, Helvetica, sans-serif ;
+}

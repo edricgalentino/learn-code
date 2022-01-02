@@ -1,0 +1,18 @@
+.container {
+    .main {
+        .main-header{
+            font-size: 1.75em;
+        }
+        &-paragraf{
+            font-weight: bold;
+        }
+    }
+    & .footer {
+        &-heading{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        &-paragraph{
+            color: aqua;
+        }
+    }
+}
