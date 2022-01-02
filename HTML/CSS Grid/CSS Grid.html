@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .container {
+            width: 800px;
+            border: 3px solid black;
+            margin: 50px auto;
+            padding: 5px;
+            box-sizing: border-box;
+            display: grid;
+            text-align: center;
+            color: white;
+            font-size: 30px;
+            grid-template-areas: "header header"
+                "aside main"
+                "nav main"
+                "footer footer";
+            grid-template-columns: 1fr 1.5fr;
+            grid-template-rows: 1fr 1fr 1.3fr;
+        }
+
+        header {
+            grid-area: header;
+            background-color: burlywood;
+            padding: 20px 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        aside {
+            grid-area: aside;
+            background-color: rgb(180, 91, 253);
+            padding: 50px 0px;
+        }
+
+        nav {
+            grid-area: nav;
+            background-color: rgb(23, 190, 135);
+            padding: 120px 0px;
+        }
+
+        main {
+            grid-area: main;
+            background-color: rgb(53, 158, 255);
+            padding: 171px 0px;
+        }
+
+        footer {
+            grid-area: footer;
+            background-color: rgb(151, 151, 151);
+            padding: 10px 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>Header</header>
+        <aside>Aside</aside>
+        <nav>Nav</nav>
+        <main>Main</main>
+        <footer>Footer</footer>
+    </div>
+
+</body>
+
+</html>

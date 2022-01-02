@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Gallery Grid</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #eee;
+            text-align: center;
+            margin: 20px;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+        }
+
+        .gallery {
+            width: 80%;
+            margin: 20px auto;
+            box-shadow: 5px 5px 5px #555;
+            border: 10px solid white;
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+            grid-gap: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2> My Gallery</h2>
+        <ul class="gallery">
+            <li><img src="../CSS Grid/gallery grid/1.jpeg" alt=""></li>
+            <li><img src="../CSS Grid/gallery grid/2.jpg" alt=""></li>
+            <li><img src="../CSS Grid/gallery grid/3.jpg" alt=""></li>
+            <li><img src="../CSS Grid/gallery grid/4.jpg" alt=""></li>
+            <li><img src="../CSS Grid/gallery grid/5.jpg" alt=""></li>
+            <li><img src="../CSS Grid/gallery grid/6.jpg" alt=""></li>
+            <li><img src="../CSS Grid/gallery grid/7.jpg" alt=""></li>
+            <li><img src="../CSS Grid/gallery grid/8.jpg" alt=""></li>
+            <li><img src="../CSS Grid/gallery grid/9.jpg" alt=""></li>
+            <li><img src="../CSS Grid/gallery grid/10.jpg" alt=""></li>
+        </ul>
+    </div>
+</body>
+
+</html>
