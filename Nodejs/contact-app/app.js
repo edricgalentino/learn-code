@@ -1,5 +1,4 @@
 // NPM Modules
-// Contact App
 
 const { makeQuestion, saveContact } = require("./contact");
 
