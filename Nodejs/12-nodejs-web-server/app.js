@@ -1,19 +1,35 @@
 const http = require("http");
+const fs = require("fs");
 const port = 3000;
 
-http.createServer((req, res) => {
+const writePages = (path, res) => {
+    fs.readFile(path, (err, data) => {
+        if (err) {
+            res.writeHead(404);
+            res.write("404 Not Found");
+        } else {
+            res.write(data, "utf8");
+        }
+    });
+};
+
+const server = http.createServer((req, res) => {
+    const url = req.url;
     res.writeHead(200, {
         "Content-Type": "text/html",
     });
-    const url = req.url;
     if (url === "/about") {
-        res.write("About Page");
+        writePages("./pages/about.html", res);
+        res.end();
     } else if (url === "/contact") {
-        res.write("Contact Page");
+        writePages("./pages/contact.html", res);
+        res.end();
     } else {
-        res.write("Home Page");
+        writePages("./index.html", res);
+        res.end();
     }
-    res.end();
-}).listen(port, () => {
-    console.log(`Server is listening on port ${port}`);
+});
+
+server.listen(port, () => {
+    console.log(`Server is listening on port ${port}...`);
 });
