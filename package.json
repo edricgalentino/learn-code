@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/edricgalentino/learn-code/issues"
   },
-  "homepage": "https://github.com/edricgalentino/learn-code#readme"
+  "homepage": "https://github.com/edricgalentino/learn-code#readme",
+  "dependencies": {
+    "nodemon": "^2.0.16"
+  }
 }
