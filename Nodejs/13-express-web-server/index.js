@@ -2,20 +2,24 @@ const express = require("express");
 const app = express();
 const port = 3000;
 
+// Templating Engine
+app.set("view engine", "ejs");
+
 app.get("/", (req, res) => {
     // res.json({
     //     message: "Hello World",
     //     status: "success",
     // });
-    res.sendFile("index.html", { encoding: "utf8", root: __dirname });
+    // res.sendFile("index.html", { encoding: "utf8", root: __dirname });
+    res.render("index", { title: "Home Page" });
 });
 
 app.get("/about", (req, res) => {
-    res.sendFile("about.html", { encoding: "utf8", root: __dirname });
+    res.render("about", { title: "About Page" });
 });
 
 app.get("/contact", (req, res) => {
-    res.sendFile("contact.html", { encoding: "utf8", root: __dirname });
+    res.render("contact", { title: "Contact Page" });
 });
 
 app.use("/", (req, res) => {
