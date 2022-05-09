@@ -7,6 +7,14 @@ const port = 3000;
 app.set("view engine", "ejs");
 app.use(expressLayouts);
 
+// Build in middleware
+app.use(express.static("public"));
+
+// Application level middleware
+app.use((req, res, next) => {
+    console.log(`Time ${Date.now()}`);
+    next();
+});
 app.get("/", (req, res) => {
     // res.json({
     //     message: "Hello World",
