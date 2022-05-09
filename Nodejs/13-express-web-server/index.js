@@ -1,9 +1,11 @@
 const express = require("express");
+const expressLayouts = require("express-ejs-layouts");
 const app = express();
 const port = 3000;
 
 // Templating Engine
 app.set("view engine", "ejs");
+app.use(expressLayouts);
 
 app.get("/", (req, res) => {
     // res.json({
@@ -11,15 +13,15 @@ app.get("/", (req, res) => {
     //     status: "success",
     // });
     // res.sendFile("index.html", { encoding: "utf8", root: __dirname });
-    res.render("index", { title: "Home Page" });
+    res.render("index", { layout: "layouts/main-layout", title: "Home Page" });
 });
 
 app.get("/about", (req, res) => {
-    res.render("about", { title: "About Page" });
+    res.render("about", { layout: "layouts/main-layout", title: "About Page" });
 });
 
 app.get("/contact", (req, res) => {
-    res.render("contact", { title: "Contact Page" });
+    res.render("contact", { layout: "layouts/main-layout", title: "Contact Page" });
 });
 
 app.use("/", (req, res) => {
