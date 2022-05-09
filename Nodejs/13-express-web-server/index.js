@@ -3,15 +3,15 @@ const app = express();
 const port = 3000;
 
 app.get("/", (req, res) => {
-    res.send("Hello Express!");
+    res.sendFile("index.html", { encoding: "utf8", root: __dirname });
 });
 
 app.get("/about", (req, res) => {
-    res.send("About page");
+    res.sendFile("about.html", { encoding: "utf8", root: __dirname });
 });
 
 app.get("/contact", (req, res) => {
-    res.send("Contact page");
+    res.sendFile("contact.html", { encoding: "utf8", root: __dirname });
 });
 
 app.use("/", (req, res) => {
