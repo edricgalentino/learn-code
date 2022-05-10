@@ -15,6 +15,7 @@ app.use((req, res, next) => {
     console.log(`Time ${Date.now()}`);
     next();
 });
+
 app.get("/", (req, res) => {
     // res.json({
     //     message: "Hello World",
