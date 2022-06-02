@@ -2,7 +2,7 @@ const express = require("express");
 const expressLayouts = require("express-ejs-layouts");
 const app = express();
 const port = 3000;
-
+// Templating Enginee 2
 // Templating Engine
 app.set("view engine", "ejs");
 app.use(expressLayouts);
