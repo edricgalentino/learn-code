@@ -8,4 +8,9 @@ const client = new MongoClient(uri, {
     useUnifiedTopology: true,
 });
 
-client.connect((err) => {});
+client.connect((err) => {
+    if (err) {
+        return "Terdapat error";
+    }
+    console.log("Berhasil terkoneksi dengan MongoDB");
+});
